@@ -18,6 +18,14 @@ app.get("/", (req, res) => {
   });
 });
 
+app.get("/books", (req, res) => {
+  res.render("pages/books", {});
+});
+
+app.get("/about", (req, res) => {
+  res.render("pages/about", {});
+});
+
 app.listen(config.getPort(), () => {
   console.log(`Listening at http://localhost:${config.getPort()}`);
 });
