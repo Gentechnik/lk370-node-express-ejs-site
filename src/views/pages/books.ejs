@@ -9,7 +9,7 @@
 
   <body>
     <h1>Info Site</h1>
-    <%- include("../partials/menu")%>
+    <%- include('../partials/menu', {pageIdCode: 'books'}) %>
     <p>the books page</p>
     <div>
       <p>There are <%=books.length%> books.</p>

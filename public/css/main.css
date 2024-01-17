@@ -12,6 +12,9 @@ nav {
 nav a {
   color: red;
 }
+nav a.active {
+  color: white;
+}
 
 li:nth-of-type(2) {
   color: red;

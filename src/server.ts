@@ -25,6 +25,10 @@ app.get("/about", (req, res) => {
   res.render("pages/about", {});
 });
 
+app.get("*", (req, res) => {
+  res.status(404).render("pages/404");
+});
+
 app.listen(config.getPort(), () => {
   console.log(`Listening at http://localhost:${config.getPort()}`);
 });
