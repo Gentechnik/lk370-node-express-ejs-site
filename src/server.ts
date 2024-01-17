@@ -9,6 +9,8 @@ const baseDir = process.cwd();
 app.set("view engine", "ejs");
 app.set("views", path.join(baseDir, "src/views"));
 
+app.use(express.static("public"));
+
 app.get("/", (req, res) => {
   res.render("pages/welcome", {
     title: "Welcome Page",

@@ -1,0 +1,15 @@
+body {
+  background-color: rgb(202, 255, 237);
+  padding: 0 1rem;
+  font-family: sans-serif;
+}
+
+li:nth-of-type(2) {
+  color: red;
+}
+li:nth-of-type(3) {
+  color: gold;
+}
+li:last-of-type {
+  color: green;
+}
