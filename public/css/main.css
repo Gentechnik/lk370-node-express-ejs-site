@@ -4,6 +4,15 @@ body {
   font-family: sans-serif;
 }
 
+nav {
+  background-color: rgb(130, 165, 153);
+  display: flex;
+  gap: 2rem;
+}
+nav a {
+  color: red;
+}
+
 li:nth-of-type(2) {
   color: red;
 }

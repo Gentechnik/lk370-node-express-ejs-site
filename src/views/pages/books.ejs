@@ -9,6 +9,15 @@
 
   <body>
     <h1>Info Site</h1>
+    <%- include("../partials/menu")%>
     <p>the books page</p>
+    <div>
+      <p>There are <%=books.length%> books.</p>
+      <ul>
+        <% books.forEach(book=>{%>
+        <li><%=book.title%></li>
+        <% }) %>
+      </ul>
+    </div>
   </body>
 </html>

@@ -8,13 +8,6 @@
   </head>
   <body>
     <h1>This is the <%=title%></h1>
-    <div>
-      <p>There are <%=books.length%> books.</p>
-      <ul>
-        <% books.forEach(book=>{%>
-        <li><%=book.title%></li>
-        <% }) %>
-      </ul>
-    </div>
+    <%- include("../partials/menu")%>
   </body>
 </html>

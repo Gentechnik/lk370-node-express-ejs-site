@@ -14,12 +14,11 @@ app.use(express.static("public"));
 app.get("/", (req, res) => {
   res.render("pages/welcome", {
     title: "Welcome Page",
-    books: model.getBooks(),
   });
 });
 
 app.get("/books", (req, res) => {
-  res.render("pages/books", {});
+  res.render("pages/books", { books: model.getBooks() });
 });
 
 app.get("/about", (req, res) => {
